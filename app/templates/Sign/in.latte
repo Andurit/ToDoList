@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]> <html class="lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]> <html class="lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Sign Up Form</title>
+  <link rel="stylesheet" href="{$basePath}/css/login/style.css">
+  <!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+<body>
+<div n:if="count($flashes)>0" id="flashmessages">
+    <div n:foreach="$flashes as $flash"
+         class='flashmessage {$flash->type}'>{$flash->message}
+    </div>
+</div>
+<div class="sign-up">
+{form signInForm}
+    <h1 class="sign-up-title">Prihláste sa</h1>
+    <input n:name="username" type="text" class="sign-up-input" placeholder="Aké je vaše prihlasovacie meno?" autofocus>
+    <input n:name="password" type="password" class="sign-up-input" placeholder="Vložt vaše heslo">
+    <input type="submit" value="Prihlásiť!" class="sign-up-button">
+{/form} 
+</div>
+</body>
+</html>
