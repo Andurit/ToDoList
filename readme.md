@@ -1,7 +1,7 @@
 Nette ToDoList
 =============
 
-Jednoduchý ToDoList vytvorený za použitia PHP / JS / AAX / JQUERY
+Jednoduchý ToDoList vytvorený za použitia PHP / JS / AAX / JQUERY /
 
   
 License
